@@ -215,7 +215,7 @@ def brainanimation(update: Update, context: CallbackContext):
     for x in range(EDIT_TIMES):
         msg.edit_text(brain_chain[x % 14])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text("❍ ʏᴏᴜ ᴘᴜᴛ ʙʀᴀɪɴ ɪɴ ᴅᴜsᴛʙɪɴ")
+    msg.edit_text("❖ ʏᴏᴜ ᴘᴜᴛ ʙʀᴀɪɴ ɪɴ ᴅᴜsᴛʙɪɴ")
 
 
 @user_admin
@@ -267,7 +267,7 @@ def bombs(update: Update, context: CallbackContext):
 @run_async
 def hack(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text("❍ ᴛᴀʀɢᴇᴛ sᴇʟᴇᴄᴛᴇᴅ")
+    msg = update.effective_message.reply_text("❖ ᴛᴀʀɢᴇᴛ sᴇʟᴇᴄᴛᴇᴅ")
     for x in range(EDIT_TIMES):
         msg.edit_text(hack_you[x % 18])
         time.sleep(EDIT_SLEEP)
@@ -284,7 +284,7 @@ def love(update: Update, context: CallbackContext):
     for x in range(EDIT_TIMES):
         msg.edit_text(love_siren[x % 35])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text("❍ ᴛʀᴜᴇ ʟᴏᴠᴇ 💞")
+    msg.edit_text("🌹 ᴛʀᴜᴇ ʟᴏᴠᴇ 💞")
 
 
 @user_admin
@@ -316,13 +316,13 @@ dispatcher.add_handler(CLOCKANIMATION_HANDLER)
 dispatcher.add_handler(BRAINANIMATION_HANDLER)
 
 __help__ = """
-*✿ ғᴀᴋᴇ ᴀɴɪᴍᴀᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅ ✿*
+*ꕤ ғᴀᴋᴇ ᴀɴɪᴍᴀᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅ ꕤ*
 
- ❍ /love ➛ ᴜsᴇ ɪᴛ ɪғ ᴜ ʜᴀᴠᴇ ɢɪʀʟғʀɪᴇɴᴅ
- ❍ /hack ➛ ᴛᴏ ʜᴀᴄᴋ ᴀɴʏ ᴜsᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ
- ❍ /moon ➛ ᴛᴏ ᴡɪsʜ ɢɴ ᴛᴏ ᴜʀ ʟᴏᴠᴇ
- ❍ /kill ➛ ᴛᴏ ᴋɪʟʟ  ᴜʀ ɢғ ᴅᴀᴅ
- ❍ /bombs ➛ ᴛᴏ sᴜᴄɪᴅᴇ ᴜʀsᴇʟғ
- ❍ /police ➛ ᴛᴏ ᴄᴀʟʟ ᴍᴀsᴛᴇʀᴍɪɴᴅ ᴘᴏʟɪᴄᴇ
+ ❖ /love ➛ ᴜsᴇ ɪᴛ ɪғ ᴜ ʜᴀᴠᴇ ɢɪʀʟғʀɪᴇɴᴅ
+ ❖ /hack ➛ ᴛᴏ ʜᴀᴄᴋ ᴀɴʏ ᴜsᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ
+ ❖ /moon ➛ ᴛᴏ ᴡɪsʜ ɢɴ ᴛᴏ ᴜʀ ʟᴏᴠᴇ
+ ❖ /kill ➛ ᴛᴏ ᴋɪʟʟ  ᴜʀ ɢғ ᴅᴀᴅ
+ ❖ /bombs ➛ ᴛᴏ sᴜᴄɪᴅᴇ ᴜʀsᴇʟғ
+ ❖ /police ➛ ᴛᴏ ᴄᴀʟʟ ᴍᴀsᴛᴇʀᴍɪɴᴅ ᴘᴏʟɪᴄᴇ
 """
-__mod_name__ = "ᴀɴɪᴍᴀᴛɪᴏɴ"
+__mod_name__ = "▪️ᴀɴɪᴍᴀᴛɪᴏɴ▪️"
