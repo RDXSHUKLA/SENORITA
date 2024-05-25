@@ -34,21 +34,21 @@ async def github(_, message):
             InlineKeyboardButton(text="ᴘʀᴏғɪʟᴇ ʟɪɴᴋ", url=url),
             InlineKeyboardButton("ᴄʟᴏsᴇ",callback_data="close_reply")
             ]]     
-                caption = f"""ㅤㅤ✦ ɢɪᴛʜᴜʙ ɪɴғᴏ ᴏғ {name} ✦
+                caption = f"""ㅤㅤⰆ ɢɪᴛʜᴜʙ ɪɴғᴏ ᴏғ {name} Ⰶ
                  
 •❅─────✧❅✦❅✧─────❅•
-๏ ᴜsᴇʀɴᴀᴍᴇ ➠ {username}
-๏ ʙɪᴏ ➠ {bio}
-๏ ʟɪɴᴋ ➠ [Here]({url})
-๏ ᴄᴏᴍᴩᴀɴʏ ➠ {company}
-๏ ᴄʀᴇᴀᴛᴇᴅ ᴏɴ ➠ {created_at}
-๏ ʀᴇᴩᴏsɪᴛᴏʀɪᴇs ➠ {repositories}
-๏ ʙʟᴏɢ ➠ {blog}
-๏ ʟᴏᴄᴀᴛɪᴏɴ ➠ {location}
-๏ ғᴏʟʟᴏᴡᴇʀs ➠ {followers}
-๏ ғᴏʟʟᴏᴡɪɴɢ ➠ {following}
+🔹ᴜsᴇʀɴᴀᴍᴇ ➠ {username}
+🔹ʙɪᴏ ➠ {bio}
+🔹ʟɪɴᴋ ➠ [Here]({url})
+🔹ᴄᴏᴍᴩᴀɴʏ ➠ {company}
+🔹ᴄʀᴇᴀᴛᴇᴅ ᴏɴ ➠ {created_at}
+🔹ʀᴇᴩᴏsɪᴛᴏʀɪᴇs ➠ {repositories}
+🔹ʙʟᴏɢ ➠ {blog}
+🔹ʟᴏᴄᴀᴛɪᴏɴ ➠ {location}
+🔹ғᴏʟʟᴏᴡᴇʀs ➠ {followers}
+🔹ғᴏʟʟᴏᴡɪɴɢ ➠ {following}
 
-๏ ᴍᴀᴅᴇ ʙʏ ➠ [sᴛʀᴀɴɢᴇʀ](https://t.me/SHIVANSH474)"""
+🔹ᴍᴀᴅᴇ ʙʏ ➠ [sᴛʀᴀɴɢᴇʀ](https://t.me/SHIVANSH474)"""
             except Exception as e:
                 await message.reply(f"#ERROR {e}")
                   
