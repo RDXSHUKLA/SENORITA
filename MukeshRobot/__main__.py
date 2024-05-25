@@ -79,18 +79,22 @@ PM_START_TEXT = """
 *ꕤ ʜᴇʏ* {}\n\n*ꕤ ᴛʜɪs ɪs* {} !\n\nꕤ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ  ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.\n─────────────────\n\n*❖ ᴜsᴇʀs »* {}\n*❖ ᴄʜᴀᴛs »* {} \n\n─────────────────\n*ꕤ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*"""
 
 buttons = [
-    [
+   [
         InlineKeyboardButton(
-            text="▪️ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ▪️", 
-            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true", 
+            text="🔸ᴀᴅᴅ ᴍᴇ🔸",
+            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
-    [
-        InlineKeyboardButton(text="▪️ʀᴇᴘᴏ▪️", callback_data="gib_source"),
-        InlineKeyboardButton(text="▪️ᴀʙᴏᴜᴛ▪️", callback_data="mukesh_"),
+   [
+        InlineKeyboardButton(text="▪️ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs▪️", callback_data="Main_help"),
     ],
     [
-        InlineKeyboardButton(text="▪️ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs▪️", callback_data="Main_help"),
+        InlineKeyboardButton(text="▪️ᴀʙᴏᴜᴛ▪️", callback_data="mukesh_"),
+        InlineKeyboardButton(text="▪️sᴜᴩᴩᴏʀᴛ▪️", url=f"https://t.me/{SUPPORT_CHAT}"),
+    ],
+   [
+        InlineKeyboardButton(text="▪️ᴅᴇᴠᴇʟᴏᴩᴇʀ▪️", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="▪️sᴏᴜʀᴄᴇ▪️", callback_data="gib_source"),
     ],
 
 ]
