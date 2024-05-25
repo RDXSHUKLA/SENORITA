@@ -789,7 +789,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "Music_roy_admin":
         query.message.edit_caption(f"*Ⰶ ꜱᴘᴀᴍ  ᴄᴏᴍᴍᴀɴᴅꜱ*"
-            f"""\n\n🔹𝗦𝗽𝗮𝗺 ➠ ꕤ ꜱᴘᴀᴍꜱ ᴀ ᴍᴇꜱꜱᴀɢᴇ. ꕤ\n 🔸/spam <count> <message to spam> (you can reply any message if you want bot to reply that message and do spamming)\n 🔸 /spam <count> <replying any message>\n\n🔹𝗣𝗼𝗿𝗻𝗦𝗽𝗮𝗺 ➠ ꕤ ᴘᴏʀᴍᴏɢʀᴀᴘʜʏ ꜱᴘᴀᴍ. ꕤ\n 🔸 /pspam <count>\n\n🔹𝗛𝗮𝗻𝗴 ➠ ꕤ ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ. ꕤ""",
+            f"""\n\n🔹𝗦𝗣𝗔𝗠 ➠ ꕤ ꜱᴘᴀᴍꜱ ᴀ ᴍᴇꜱꜱᴀɢᴇ. ꕤ\n 🔸/spam <count> <message to spam> (you can reply any message if you want bot to reply that message and do spamming)\n 🔸 /spam <count> <replying any message>\n\n🔹𝗣𝗢𝗥𝗡𝗦𝗣𝗔𝗠 ➠ ꕤ ᴘᴏʀᴍᴏɢʀᴀᴘʜʏ ꜱᴘᴀᴍ. ꕤ\n 🔸 /pspam <count>\n\n🔹𝗛𝗔𝗡𝗚 ➠ ꕤ ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ. ꕤ""",
             parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
@@ -802,7 +802,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "Music_roy_play":
         query.message.edit_caption(f"*▫️ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ▫️*"
-            f"""\n\n🔹𝗥𝗮𝗶𝗱 ➠ ꕤ ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜꜱᴇʀ ꜰᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ. ꕤ\n 🔸 /raid <count> <username>\n 🔸 /raid <count> <reply to user>\n\n🔹𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱 ➠ ꕤ ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /rraid <replying to user>\n 🔸 /rraid <username>\n\n🔹𝗗𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱 ➠ ꕤ ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /drraid <replying to user>\n 🔸 /drraid <username>\n\n🔹𝐌𝐑𝐚𝐢𝐝 ➠ ꕤ ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /mraid <count> <username>\n 🔸 /mraid <count> <reply to user>\n\n🔹𝐒𝐑𝐚𝐢𝐝 ➠ ꕤ ꜱʜᴀʏᴀʀɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /sraid <count> <username>\n 🔸 /sraid <count> <reply to user>\n\n🔹𝐂𝐑𝐚𝐢𝐝 ➠ ꕤ ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /craid <count> <username>\n 🔸 /craid <count> <reply to user>""",
+            f"""\n\n🔹𝗥𝗔𝗜𝗗 ➠ ꕤ ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜꜱᴇʀ ꜰᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ. ꕤ\n 🔸 /raid <count> <username>\n 🔸 /raid <count> <reply to user>\n\n🔹𝗥𝗘𝗣𝗟𝗬𝗥𝗔𝗜𝗗 ➠ ꕤ ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /rraid <replying to user>\n 🔸 /rraid <username>\n\n🔹𝗗𝗥𝗘𝗣𝗟𝗬𝗥𝗔𝗜𝗗 ➠ ꕤ ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /drraid <replying to user>\n 🔸 /drraid <username>\n\n🔹𝗠𝗥𝗔𝗜𝗗 ➠ ꕤ ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /mraid <count> <username>\n 🔸 /mraid <count> <reply to user>\n\n🔹𝗦𝗥𝗔𝗜𝗗 ➠ ꕤ ꜱʜᴀʏᴀʀɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /sraid <count> <username>\n 🔸 /sraid <count> <reply to user>\n\n🔹𝗖𝗥𝗔𝗜𝗗 ➠ ꕤ ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ. ꕤ\n 🔸 /craid <count> <username>\n 🔸 /craid <count> <reply to user>""",
             parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
@@ -816,7 +816,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
     elif query.data == "Music_roy_bot":
         query.message.edit_caption(f"*▫️ʙᴏᴛ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ▫️*"
 
-            f"""\n\n🔹𝗨𝘀𝗲𝗿𝗕𝗼𝘁 ➠ ꕤ ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ ꕤ\n 🔸 /ping \n 🔸 /reboot\n 🔸 /sudo <reply to user>  ➛ Owner Cmd\n 🔸 /logs ➛ Owner Cmd\n\n🔹𝗘𝗰𝗵𝗼 ➠ ꕤ ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ ꕤ\n 🔸 /echo <reply to user>\n 🔸 /rmecho <reply to user>\n\n🔹𝗟𝗲𝗮𝘃𝗲 ➠ ꕤ ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ꕤ\n 🔸 /leave <group/chat id>\n 🔸 /leave ➛ Type in the Group bot will auto leave that group""",
+            f"""\n\n🔹𝗨𝗦𝗘𝗥𝗕𝗢𝗧 ➠ ꕤ ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ ꕤ\n 🔸 /ping \n 🔸 /reboot\n 🔸 /sudo <reply to user>  ➛ Owner Cmd\n 🔸 /logs ➛ Owner Cmd\n\n🔹𝗘𝗖𝗛𝗢 ➠ ꕤ ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ ꕤ\n 🔸 /echo <reply to user>\n 🔸 /rmecho <reply to user>\n\n🔹𝗟𝗘𝗔𝗩𝗘 ➠ ꕤ ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ꕤ\n 🔸 /leave <group/chat id>\n 🔸 /leave ➛ Type in the Group bot will auto leave that group""",
             parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
