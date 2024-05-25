@@ -97,16 +97,16 @@ async def greet_group(_, member: ChatMemberUpdated):
 
 **▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬**
 
-**☉ ɴᴀᴍᴇ ⧽** {user.mention}
-**☉ ɪᴅ ⧽** `{user.id}`
-**☉ ᴜ_ɴᴀᴍᴇ ⧽** @{user.username}
-**☉ ᴍᴀᴅᴇ ʙʏ ⧽** [sᴛʀᴀɴɢᴇʀ](https://t.me/SHIVANSH474)**
+**🔹ɴᴀᴍᴇ ⧽** {user.mention}
+**🔹ɪᴅ ⧽** `{user.id}`
+**🔹ᴜ_ɴᴀᴍᴇ ⧽** @{user.username}
+**🔹ᴍᴀᴅᴇ ʙʏ ⧽** [sᴛʀᴀɴɢᴇʀ](https://t.me/SHIVANSH474)**
 
 **▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬**
 
-**⎉──────▢✭ 侖 ✭▢──────⎉**
+**⎉──────ꕤ✧ 侖 ✧ꕤ──────⎉**
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴠɪᴇᴡ ᴜsᴇʀ ⦿", url=f"https://t.me/{user.username}")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"▪️ᴠɪᴇᴡ ᴜsᴇʀ▪️", url=f"https://t.me/{user.username}")]])
         )
     except Exception as e:
         LOGGER.error(e)
