@@ -58,7 +58,6 @@ youtube_search_python
 pyshorteners
 faker
 pyfiglet
-git+https://github.com/Awesome-RJ/GoGoAnimeAPI.git
 unidecode
-openai==1.10.0
+openai==1.26.0
 numpy==1.26.3
