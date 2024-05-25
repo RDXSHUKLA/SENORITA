@@ -11,7 +11,7 @@ from telethon import __version__ as tver
 from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME,START_IMG
 
 MISHI = [
-    "https://telegra.ph/file/81aa2cd542ffe2beca305.jpg",
+"https://telegra.ph/file/81aa2cd542ffe2beca305.jpg",
 "https://telegra.ph/file/3fbc8004d3d46bf37ae8a.jpg",
 "https://telegra.ph/file/e18b44b1a24feadcc67ce.jpg",
 "https://telegra.ph/file/3ed786ad4494b5474594a.jpg",
