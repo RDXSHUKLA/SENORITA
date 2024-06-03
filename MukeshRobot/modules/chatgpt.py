@@ -19,7 +19,7 @@ async def chat_gpt(bot, message):
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ: {e} ")
 
-__mod_name__ = "Cʜᴀᴛɢᴘᴛ"
+__mod_name__ = "ᴄʜᴀᴛɢᴘᴛ"
 __help__ = """
  Cʜᴀᴛɢᴘᴛ ᴄᴀɴ ᴀɴsᴡᴇʀ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ  ᴀɴᴅ sʜᴏᴡs ʏᴏᴜ ᴛʜᴇ ʀᴇsᴜʟᴛ
 
