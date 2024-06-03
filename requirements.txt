@@ -58,3 +58,6 @@ pyshorteners
 faker
 pyfiglet
 MukeshAPI
+unidecode
+openai==1.26.0
+numpy==1.26.3
