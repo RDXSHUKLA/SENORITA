@@ -25,7 +25,7 @@ import MukeshRobot.modules.sql.chatbot_sql as sql
 from MukeshRobot import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher
 from MukeshRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from MukeshRobot.modules.log_channel import gloggable
-
+from MukeshAPI import api
 
 @user_admin_no_reply
 @gloggable
@@ -40,13 +40,13 @@ def mukeshrm(update: Update, context: CallbackContext) -> str:
         if is_mukesh:
             is_mukesh = sql.set_mukesh(user_id)
             return (
-                f"❍ <b>{html.escape(chat.title)}</b>\n"
-                f"❍ ᴀɪ ᴅɪꜱᴀʙʟᴇᴅ\n"
-                f"❍ <b>ᴀᴅᴍɪɴ ➛</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+                f"<b>{html.escape(chat.title)}:</b>\n"
+                f"ᴀɪ ᴅɪꜱᴀʙʟᴇᴅ\n"
+                f"<b>ᴀᴅᴍɪɴ :</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "❍ {} ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ ➛ {}.".format(
+                "{} ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(
                     dispatcher.bot.first_name, mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -68,13 +68,13 @@ def mukeshadd(update: Update, context: CallbackContext) -> str:
         if is_mukesh:
             is_mukesh = sql.rem_mukesh(user_id)
             return (
-                f"❍ <b>{html.escape(chat.title)}</b>\n"
-                f"❍ ᴀɪ ᴇɴᴀʙʟᴇ\n"
-                f"❍ <b>ᴀᴅᴍɪɴ ➛</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+                f"<b>{html.escape(chat.title)}:</b>\n"
+                f"ᴀɪ ᴇɴᴀʙʟᴇ\n"
+                f"<b>ᴀᴅᴍɪɴ :</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "❍ {} ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ ➛ {}".format(
+                "{} ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(
                     dispatcher.bot.first_name, mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -87,7 +87,7 @@ def mukeshadd(update: Update, context: CallbackContext) -> str:
 @gloggable
 def mukesh(update: Update, context: CallbackContext):
     message = update.effective_message
-    msg = "❍ ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ"
+    msg = "• ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ"
     keyboard = InlineKeyboardMarkup(
         [
             [
@@ -128,10 +128,8 @@ def chatbot(update: Update, context: CallbackContext):
         if not mukesh_message(context, message):
             return
         bot.send_chat_action(chat_id, action="typing")
-        url=f"https://mukesh-api.vercel.app/chatbot/{message.text}"
-        response = requests.get(url).json()["results"]
-        
-        message.reply_text(response)
+        url=api.chatgpt(message.text,mode="gf")["results"]
+        message.reply_text(url)
 
 
 
@@ -153,11 +151,6 @@ dispatcher.add_handler(ADD_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOTK_HANDLER)
 dispatcher.add_handler(RM_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOT_HANDLER)
-
-__mod_name__ = "ᴄʜᴀᴛ-ʙᴏᴛ"
-__help__ = """
- ❍ /chatbot ➛ ᴀɪ ᴄʜᴀᴛʙᴏᴛ [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ]
- """
 
 __handlers__ = [
     ADD_CHAT_HANDLER,
