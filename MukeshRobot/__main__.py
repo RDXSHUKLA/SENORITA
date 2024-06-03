@@ -521,7 +521,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             ),
             )
     elif query.data=="user_help":
-        query.message.edit_caption("""֍ 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 ֍ \n\n֍ Hᴇʏ..! ᴍᴀsᴛᴇʀ..!!👋!\n\n֍ ɪ' ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ  ɪᴅ ᴜsᴇʀʙᴏᴛ ʜᴇʟᴘᴇʀ?\n\n֍ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ʜᴏsᴛ ʏᴏᴜʀ ʟᴇғᴛ ᴄʟɪᴇɴᴛs\n\n֍ ʜᴇʟᴘᴇʀ ֍  [sᴇssɪᴏɴ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴇʀ ʀᴏʙᴏᴛ](https://t.me/Pbx_String_Bot)\n\n֍ ᴛʜᴇɴ ᴍᴀᴋᴇ ᴘʏʀᴏɢʀᴀᴍ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴇʀ.\n\n֍ ɴᴏᴡ  /clone {sᴇɴᴅ ʏᴏᴜʀ PʏʀᴏGʀᴀᴍ2 Sᴛʀɪɴɢ Sᴇssɪᴏɴ...❤️""",parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption("""**Ⰶ ʜᴇʀᴇ ɪs ᴜsᴇʀʙᴏᴛ ʜᴏsᴛɪɴɢ ᴄᴏᴍᴍᴏɴᴅ**\n\nꕤ Hᴇʏ..! ᴍᴀsᴛᴇʀ..!!👋!\n\nꕤ ɪ' ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ  ɪᴅ ᴜsᴇʀʙᴏᴛ ʜᴇʟᴘᴇʀ?\n\nꕤ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ʜᴏsᴛ ʏᴏᴜʀ ʟᴇғᴛ ᴄʟɪᴇɴᴛs\n\nꕤ ʜᴇʟᴘᴇʀ ➛ [sᴇssɪᴏɴ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴇʀ ʀᴏʙᴏᴛ](https://t.me/StringSesssionGeneratorRobot)\n\nꕤ ᴛʜᴇɴ ᴍᴀᴋᴇ ᴘʏʀᴏɢʀᴀᴍ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴇʀ.\n\nꕤ ɴᴏᴡ🔸/clone {sᴇɴᴅ ʏᴏᴜʀ PʏʀᴏGʀᴀᴍ Sᴛʀɪɴɢ Sᴇssɪᴏɴ...💻""",parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
                 [
