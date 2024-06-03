@@ -512,8 +512,22 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="▪️ᴀɴɪᴍᴇ▪️", callback_data="source_") 
                     ],
                     [
+                        InlineKeyboardButton(text="▪️ᴜsᴇʀʙᴏᴛ▪️", callback_data="user_help")
+                    ],
+                    [
                         InlineKeyboardButton(text="▪️ʜᴏᴍᴇ▪️", callback_data="mukesh_back")
                     ],
+                ]
+            ),
+            )
+    elif query.data=="user_help":
+        query.message.edit_caption("""֍ 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 ֍ \n\n֍ Hᴇʏ..! ᴍᴀsᴛᴇʀ..!!👋!\n\n֍ ɪ' ᴀᴍ ᴘᴏᴡᴇʀғᴜʟ  ɪᴅ ᴜsᴇʀʙᴏᴛ ʜᴇʟᴘᴇʀ?\n\n֍ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ʜᴏsᴛ ʏᴏᴜʀ ʟᴇғᴛ ᴄʟɪᴇɴᴛs\n\n֍ ʜᴇʟᴘᴇʀ ֍  [sᴇssɪᴏɴ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴇʀ ʀᴏʙᴏᴛ](https://t.me/Pbx_String_Bot)\n\n֍ ᴛʜᴇɴ ᴍᴀᴋᴇ ᴘʏʀᴏɢʀᴀᴍ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴇʀ.\n\n֍ ɴᴏᴡ  /clone {sᴇɴᴅ ʏᴏᴜʀ PʏʀᴏGʀᴀᴍ2 Sᴛʀɪɴɢ Sᴇssɪᴏɴ...❤️""",parse_mode=ParseMode.MARKDOWN,
+
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(text="▪️ʙᴀᴄᴋ▪️", callback_data="Main_help"),InlineKeyboardButton(text="▪️sᴜᴘᴘᴏʀᴛ▪️", callback_data="mukesh_support")
+                    ]
                 ]
             ),
             )
