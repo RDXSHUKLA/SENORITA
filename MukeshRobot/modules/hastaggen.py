@@ -2,7 +2,7 @@ import requests
 from MukeshRobot import pbot as mukesh
 from pyrogram import filters
 
-@mukesh.on_message(filters.command("hastag"))
+@mukesh.on_message(filters.command("mhastag"))
 async def hastag(bot, message):
     
     try:
