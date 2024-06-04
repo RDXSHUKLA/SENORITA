@@ -35,7 +35,7 @@ from MukeshRobot import telethn
 from MukeshRobot.events import register
 
 
-@register(pattern="^/sg ?(.*)")
+@register(pattern="^/msg ?(.*)")
 @register(pattern="^/check_name ?(.*)")
 async def lastname(steal):
     steal.pattern_match.group(1)
