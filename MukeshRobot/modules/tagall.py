@@ -11,7 +11,7 @@ spam_chats = []
 
 @client.on(events.NewMessage(pattern="^@tagall ?(.*)"))
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
-@client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
+@client.on(events.NewMessage(pattern="^utagall ?(.*)"))
 @client.on(events.NewMessage(pattern="^@mention ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
