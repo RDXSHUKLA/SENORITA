@@ -83,7 +83,7 @@ from MukeshRobot import pbot as client
 Mukesh = "https://telegra.ph/file/d9bddd89a8070632de73e.jpg"
 
 
-@client.on_message(filters.command(["repo", "source"]))
+@client.on_message(filters.command(["shivrepo", "msource"]))
 async def repo(client, message):
     await message.reply_photo(
         photo=Mukesh,
