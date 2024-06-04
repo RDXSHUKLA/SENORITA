@@ -49,7 +49,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@register(pattern="^/gen (.*)")
+@register(pattern="^/mgen (.*)")
 async def alive(event):
     if event.is_group and not await is_register_admin(event.input_chat,
                                                       event.message.sender_id):
