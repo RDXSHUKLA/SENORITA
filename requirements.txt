@@ -60,4 +60,4 @@ pyfiglet
 MukeshAPI
 unidecode
 openai==1.26.0
-numpy==1.26.3
+numpy==2.0.1
