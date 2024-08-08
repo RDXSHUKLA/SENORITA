@@ -2,7 +2,7 @@ class Config(object):
     LOGGER = True
     API_ID = "27383453" 
     API_HASH = "4c246fb0c649477cc2e79b6a178ddfaa"
-    TOKEN = ""  
+    TOKEN = "6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"  
     OWNER_ID = "6762113050"
     
     SUPPORT_CHAT = "MASTIWITHFRIENDSXD" 
