@@ -1,16 +1,16 @@
 class Config(object):
     LOGGER = True
-    API_ID =None 
-    API_HASH = ""
+    API_ID = "27383453" 
+    API_HASH = "4c246fb0c649477cc2e79b6a178ddfaa"
     TOKEN = ""  
-    OWNER_ID=None
+    OWNER_ID = "6762113050"
     
-    SUPPORT_CHAT = "" 
-    START_IMG = ""
-    EVENT_LOGS = ()
-    MONGO_DB_URI= ""
+    SUPPORT_CHAT = "MASTIWITHFRIENDSXD" 
+    START_IMG = "https://telegra.ph/file/487a4f14fa6c7222cd6aa.jpg"
+    EVENT_LOGS = "-1002018556839"
+    MONGO_DB_URI= "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
    
-    DATABASE_URL = ""  # A sql database url from elephantsql.com
+    DATABASE_URL = "postgres://u4g7epl1eascgt:p039208bc961ee80650fe6d893faa86ea5a6ffe2d6b44e379bbab09046d58fac7@cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d93jaska2dlb3u"  # A sql database url from elephantsql.com
     CASH_API_KEY = (
         ""
     )
