@@ -10,7 +10,7 @@ class Config(object):
     EVENT_LOGS = "-1002018556839"
     MONGO_DB_URI= "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
    
-    DATABASE_URL = "postgres://u4g7epl1eascgt:p039208bc961ee80650fe6d893faa86ea5a6ffe2d6b44e379bbab09046d58fac7@cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d93jaska2dlb3u"  # A sql database url from elephantsql.com
+    DATABASE_URL = "postgres://xstkpsmj:U-VJtcQTXFwyDzAyOoJAY4fclQt-8y6m@satao.db.elephantsql.com/xstkpsmj"  # A sql database url from elephantsql.com
     CASH_API_KEY = (
         ""
     )
