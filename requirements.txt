@@ -17,7 +17,7 @@ emoji-country-flag==2.0.1
 faker
 feedparser==6.0.11
 ffmpeg-python==0.2.0
-future==0.18.3
+future==1.0.0
 geopy==2.4.1
 gtts
 gpytranslate==1.5.1
