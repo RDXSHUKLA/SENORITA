@@ -15,7 +15,7 @@ class Config(object):
     MONGO_DB_URI= "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
     # RECOMMENDED
 BOT_USERNAME = getenv("BOT_USERNAME" , "StrangerSuperbot")
-    DATABASE_URL = getenv("DATABASE_URL", " postgres://iarfggbc:Vxzh_kG7cxa1kHR5faxcd1kuA4R-UT9E@rosie.db.elephantsql.com/iarfggbc")
+    DATABASE_URL = getenv("DATABASE_URL"," postgres://xstkpsmj:U-VJtcQTXFwyDzAyOoJAY4fclQt-8y6m@satao.db.elephantsql.com/xstkpsmj")
     CASH_API_KEY = (
         ""  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
