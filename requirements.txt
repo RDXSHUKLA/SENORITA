@@ -37,7 +37,7 @@ pyfiglet
 pykeyboard==0.1.5
 pymongo
 pynewtonmath==1.0.1
-pyrate-limiter==2.10.0
+pyrate-limiter==3.7.0
 pyshorteners
 pyrogram==2.0.106
 python-telegram-bot==13.15
