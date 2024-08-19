@@ -15,7 +15,7 @@ from MukeshRobot import (
     SUPPORT_CHAT,
     TIGERS,
     WOLVES,
-    dispatcher,
+    #dispatcher,
 )
 
 
