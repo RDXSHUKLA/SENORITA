@@ -70,8 +70,8 @@ TOKEN = "6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
 
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
-telethn = TelegramClient("mukesh", API_ID, API_HASH)
-pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN, in_memory=True)
+#telethn = TelegramClient("mukesh", API_ID, API_HASH)
+#pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN, in_memory=True)
 
 async def main():
     global aiohttpsession
