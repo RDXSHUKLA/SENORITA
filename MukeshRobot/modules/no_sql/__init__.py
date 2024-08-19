@@ -1,82 +1,63 @@
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
-from pymongo import MongoClient, collection
+from pymongo import collection
+from pymongo.errors import PyMongoError
 
-from MukeshRobot import  MONGO_DB_URI
+# Replace with your actual MongoDB URI
+MONGO_DB_URI = "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
 
-mongo = MongoCli("mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority")
+# Initialize MongoDB client
+mongo = MongoCli(MONGO_DB_URI)
 Mukeshdb = mongo.MUK_ROB
 
-try:
-    client = MongoClient(MONGO_DB_URI)
-except PyMongoError:
-    exiter(1)
-main_db = client["MUKESH_ROBOT"]
-
-
-MukeshXdb = main_db
-
-
-def get_collection(name: str) -> collection:
-    """ɢᴇᴛ ᴛʜᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ғʀᴏᴍ ᴅᴀᴛᴀʙᴀsᴇ."""
-    return MukeshXdb[name]
-
+async def get_collection(name: str) -> collection:
+    """Get the collection from the database."""
+    return Mukeshdb[name]
 
 class MongoDB:
-    """Class for interacting with Bot database."""
+    """Class for interacting with the Bot database."""
 
     def __init__(self, collection) -> None:
-        self.collection = MukeshXdb[collection]
+        self.collection = Mukeshdb[collection]
 
-    # Insert one entry into collection
-    def insert_one(self, document):
-        result = self.collection.insert_one(document)
+    async def insert_one(self, document):
+        result = await self.collection.insert_one(document)
         return repr(result.inserted_id)
 
-    # Find one entry from collection
-    def find_one(self, query):
-        result = self.collection.find_one(query)
-        if result:
-            return result
-        return False
+    async def find_one(self, query):
+        result = await self.collection.find_one(query)
+        return result if result else False
 
-    # Find entries from collection
-    def find_all(self, query=None):
-        if query is None:
-            query = {}
-        return list(self.collection.find(query))
+    async def find_all(self, query=None):
+        query = query or {}
+        return [doc async for doc in self.collection.find(query)]
 
-    # Count entries from collection
-    def count(self, query=None):
-        if query is None:
-            query = {}
-        return self.collection.count_documents(query)
+    async def count(self, query=None):
+        query = query or {}
+        return await self.collection.count_documents(query)
 
-    # Delete entry/entries from collection
-    def delete_one(self, query):
-        self.collection.delete_many(query)
-        return self.collection.count_documents({})
+    async def delete_one(self, query):
+        await self.collection.delete_many(query)
+        return await self.collection.count_documents({})
 
-    # Replace one entry in collection
-    def replace(self, query, new_data):
-        old = self.collection.find_one(query)
+    async def replace(self, query, new_data):
+        old = await self.collection.find_one(query)
         _id = old["_id"]
-        self.collection.replace_one({"_id": _id}, new_data)
-        new = self.collection.find_one({"_id": _id})
+        await self.collection.replace_one({"_id": _id}, new_data)
+        new = await self.collection.find_one({"_id": _id})
         return old, new
 
-    # Update one entry from collection
-    def update(self, query, update):
-        result = self.collection.update_one(query, {"$set": update})
-        new_document = self.collection.find_one(query)
+    async def update(self, query, update):
+        result = await self.collection.update_one(query, {"$set": update})
+        new_document = await self.collection.find_one(query)
         return result.modified_count, new_document
 
-    @staticmethod
-    def close():
-        return client.close()
+    async def close(self):
+        await mongo.close()
 
+async def __connect_first():
+    db = MongoDB("test")
+    await db.insert_one({"test": "value"})  # Example operation
 
-def __connect_first():
-    _ = MongoDB("test")
-
-
-__connect_first()
+# Example usage:
+# import asyncio
+# asyncio.run(__connect_first())
