@@ -9,7 +9,7 @@ from pyrogram import Client
 from telethon import TelegramClient
 
 StartTime = time.time()
-
+dispatcher = updater.dispatcher
 # Enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
