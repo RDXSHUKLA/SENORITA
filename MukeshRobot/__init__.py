@@ -10,7 +10,7 @@ from telethon import TelegramClient
 import telegram.ext as tg
 
 TOKEN="6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
-
+WORKERS = 8
 StartTime = time.time()
 updater = tg.Updater(bot_token=TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
