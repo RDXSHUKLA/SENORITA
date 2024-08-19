@@ -10,7 +10,7 @@ from telethon import TelegramClient
 import telegram.ext as tg
 
 StartTime = time.time()
-updater = tg.Updater, workers=WORKERS, use_context=True)
+updater = tg.Updater(bot_token=TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
 
 pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN,in_memory=True)
