@@ -53,6 +53,8 @@ BOT_USERNAME = "StrangerSuperbot"
 BOT_ID = "6797752601"
 OWNER_ID = "6797752601"
 START_IMG = "https://telegra.ph/file/bf3690a17b9da7d26808b.jpg"
+SUPPORT_CHAT = "MASTIWITHFRIENDSXD"
+
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
@@ -69,6 +71,7 @@ async def main():
     BOT_USERNAME = "StrangerSuperbot"
     OWNER_ID = "6797752601"
     START_IMG = "https://telegra.ph/file/bf3690a17b9da7d26808b.jpg"
+    SUPPORT_CHAT = "MASTIWITHFRIENDSXD"
 
     # These variables are set here after bot initialization
     from MukeshRobot import BOT_NAME, BOT_USERNAME, BOT_ID
