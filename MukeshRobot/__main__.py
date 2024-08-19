@@ -28,7 +28,8 @@ from telegram.ext import (
     MessageHandler,
 )
 #from telegram.ext.dispatcher import DispatcherHandlerStop
-from telegram.utils.helpers import escape_markdown
+from telegram.helpers import escape_markdown
+
 from telethon import __version__ as tlhver
 
 import MukeshRobot.modules.no_sql.users_db as sql
