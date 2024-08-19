@@ -1,4 +1,4 @@
-#from MukeshRobot import LOAD, LOGGER, NO_LOAD
+from MukeshRobot.confing import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
