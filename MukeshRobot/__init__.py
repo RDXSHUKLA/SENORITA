@@ -54,6 +54,7 @@ BOT_ID = "6797752601"
 OWNER_ID = "6797752601"
 START_IMG = "https://telegra.ph/file/bf3690a17b9da7d26808b.jpg"
 SUPPORT_CHAT = "MASTIWITHFRIENDSXD"
+TOKEN = "6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
 
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
@@ -72,6 +73,7 @@ async def main():
     OWNER_ID = "6797752601"
     START_IMG = "https://telegra.ph/file/bf3690a17b9da7d26808b.jpg"
     SUPPORT_CHAT = "MASTIWITHFRIENDSXD"
+    TOKEN = "6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
 
     # These variables are set here after bot initialization
     from MukeshRobot import BOT_NAME, BOT_USERNAME, BOT_ID
