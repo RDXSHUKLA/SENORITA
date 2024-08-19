@@ -42,7 +42,7 @@ from MukeshRobot import (
     SUPPORT_CHAT,
     TOKEN,
     StartTime,
-    dispatcher,
+    #dispatcher,
     pbot,
     telethn,
     updater,
