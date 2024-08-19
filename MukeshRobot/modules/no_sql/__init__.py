@@ -3,7 +3,7 @@ from pymongo import MongoClient, collection
 
 from MukeshRobot import  MONGO_DB_URI
 
-mongo = MongoCli(MONGO_DB_URI)
+mongo = MongoCli("mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority")
 Mukeshdb = mongo.MUK_ROB
 
 try:
