@@ -1,4 +1,4 @@
-from telegram.ext import Filters
+from telegram.ext import filters
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler
 from telegram import Update
 from telegram.ext import filters
@@ -24,7 +24,7 @@ from telegram.ext import (
     CallbackContext,
     CallbackQueryHandler,
     CommandHandler,
-    Filters,
+    filters,
     MessageHandler,
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop
