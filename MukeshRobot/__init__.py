@@ -7,6 +7,7 @@ from telegram.ext import ApplicationBuilder
 from aiohttp import ClientSession
 from pyrogram import Client
 from telethon import TelegramClient
+import telegram.ext as tg
 
 StartTime = time.time()
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
