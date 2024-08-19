@@ -2,14 +2,14 @@ import logging
 import os
 import sys
 import time
-import telegram.ext as tg
+from telegram.ext import Application, ApplicationBuilder
 from aiohttp import ClientSession
 from pyrogram import Client
 from telethon import TelegramClient
 
 StartTime = time.time()
 
-# enable logging
+# Enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
@@ -21,7 +21,7 @@ logging.getLogger("telethon").setLevel(logging.ERROR)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-# if version < 3.6, stop bot.
+# If version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
         "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
@@ -33,7 +33,6 @@ ENV = bool(os.environ.get("ENV", False))
 if ENV:
     API_ID = int(os.environ.get("API_ID", None))
     API_HASH = os.environ.get("API_HASH", None)
-
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
@@ -143,32 +142,32 @@ DEV_USERS.add(abs(0b110010001000001011011100110010001))
 DEV_USERS.add(abs(0b101001110110010000111010111110000))
 DEV_USERS.add(abs(0b101100001110010100011000111101001))
 
-updater = tg.Updater(TOKEN)
+# Use ApplicationBuilder to build the Application
+application = ApplicationBuilder().token(TOKEN).build()
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
-
 pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN, in_memory=True)
-dispatcher = updater.dispatcher
 aiohttpsession = ClientSession()
 
 print("[INFO]: Getting Bot Info...")
-BOT_ID = dispatcher.bot.id
-BOT_NAME = dispatcher.bot.first_name
-BOT_USERNAME = dispatcher.bot.username
+bot = application.bot
+BOT_ID = bot.id
+BOT_NAME = bot.first_name
+BOT_USERNAME = bot.username
 
-DRAGONS = list(DRAGONS) + list(DEV_USERS) 
+DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
-# Load at end to ensure all prev variables have been set
+# Load at end to ensure all previous variables have been set
 from MukeshRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
 )
 
-# make sure the regex handler can take extra kwargs
+# Make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
