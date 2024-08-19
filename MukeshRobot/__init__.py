@@ -21,6 +21,27 @@ telethn = TelegramClient("mukesh", API_ID, API_HASH)
 LOGGER = True
 LOAD = []
 NO_LOAD = []
+EVENT_LOGS = "-1002018556839"
+MONGO_DB_URI= "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
+
+DATABASE_URL = "postgres://fodrfyzd:fozO611cVktRfkPLfRb1S52saC6AsKAe@castor.db.elephantsql.com/fodrfyzd"  # A sql database url from elephantsql.com
+CASH_API_KEY = ""
+TIME_API_KEY = ""
+
+
+BL_CHATS = [] 
+DRAGONS = []
+DEV_USERS = []  
+DEMONS = [] 
+TIGERS = []  
+WOLVES = [] 
+
+ALLOW_CHATS = True
+ALLOW_EXCL = True
+DEL_CMDS = True
+INFOPIC = True
+STRICT_GBAN = True
+TEMP_DOWNLOAD_DIRECTORY = "./"
 
 pbot = Client("MukeshRobot", API_ID, API_HASH, TOKEN)
 #dispatcher = updater.dispatcher
