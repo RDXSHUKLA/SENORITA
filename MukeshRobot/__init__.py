@@ -20,7 +20,7 @@ telethn = TelegramClient("mukesh", API_ID, API_HASH)
 
 pbot = Client("MukeshRobot", API_ID, API_HASH, TOKEN)
 #dispatcher = updater.dispatcher
-aiohttpsession = ClientSession()
+#aiohttpsession = ClientSession()
 
 # Enable logging
 logging.basicConfig(
