@@ -11,6 +11,8 @@ import telegram.ext as tg
 
 TOKEN="6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
 WORKERS = 8
+use_context=True
+
 StartTime = time.time()
 updater = tg.Updater(TOKEN, WORKERS, use_context=True)
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
