@@ -48,9 +48,9 @@ else:
     MONGO_DB_URI = Config.MONGO_DB_URI
 
 # Make sure these are defined in __init__.py or imported from elsewhere
-BOT_NAME = SENORITA
-BOT_USERNAME = StrangerSuperbot
-BOT_ID = 6797752601
+BOT_NAME = "SENORITA"
+BOT_USERNAME = "StrangerSuperbot"
+BOT_ID = "6797752601"
 
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
@@ -63,9 +63,9 @@ async def main():
 
     print("[INFO]: Getting Bot Info...")
     bot = application.bot
-    BOT_ID = bot.id
-    BOT_NAME = bot.first_name
-    BOT_USERNAME = bot.username
+    BOT_ID = "6797752601"
+    BOT_NAME = "SENORITA"
+    BOT_USERNAME = "StrangerSuperbot"
 
     # These variables are set here after bot initialization
     from MukeshRobot import BOT_NAME, BOT_USERNAME, BOT_ID
