@@ -11,12 +11,14 @@ import telegram.ext as tg
 
 TOKEN="6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
 WORKERS = 8
+API_ID = "27383453" 
+API_HASH = "4c246fb0c649477cc2e79b6a178ddfaa"
 
 StartTime = time.time()
 updater = tg.Updater(TOKEN, WORKERS)
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
 
-pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN,in_memory=True)
+pbot = Client("MukeshRobot", API_ID, API_HASH, TOKEN)
 dispatcher = updater.dispatcher
 aiohttpsession = ClientSession()
 
