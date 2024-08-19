@@ -48,9 +48,9 @@ else:
     MONGO_DB_URI = Config.MONGO_DB_URI
 
 # Make sure these are defined in __init__.py or imported from elsewhere
-BOT_NAME = None
-BOT_USERNAME = None
-BOT_ID = None
+BOT_NAME = SENORITA
+BOT_USERNAME = StrangerSuperbot
+BOT_ID = 6797752601
 
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
