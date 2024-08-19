@@ -27,7 +27,7 @@ from telegram.ext import (
     filters,
     MessageHandler,
 )
-from telegram.ext.dispatcher import DispatcherHandlerStop
+#from telegram.ext.dispatcher import DispatcherHandlerStop
 from telegram.utils.helpers import escape_markdown
 from telethon import __version__ as tlhver
 
