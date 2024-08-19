@@ -32,7 +32,7 @@ from telegram.helpers import escape_markdown
 
 from telethon import __version__ as tlhver
 
-import MukeshRobot.modules.no_sql.users_db as sql
+#import MukeshRobot.modules.no_sql.users_db as sql
 from MukeshRobot import (
     BOT_NAME,
     BOT_USERNAME,
