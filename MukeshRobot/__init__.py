@@ -51,6 +51,7 @@ else:
 BOT_NAME = "SENORITA"
 BOT_USERNAME = "StrangerSuperbot"
 BOT_ID = "6797752601"
+OWNER_ID = "6797752601"
 
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
@@ -66,7 +67,7 @@ async def main():
     BOT_ID = "6797752601"
     BOT_NAME = "SENORITA"
     BOT_USERNAME = "StrangerSuperbot"
-
+    OWNER_ID = "6797752601"
     # These variables are set here after bot initialization
     from MukeshRobot import BOT_NAME, BOT_USERNAME, BOT_ID
 
