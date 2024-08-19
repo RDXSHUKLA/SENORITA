@@ -47,6 +47,11 @@ else:
     TOKEN = Config.TOKEN
     MONGO_DB_URI = Config.MONGO_DB_URI
 
+# Make sure these are defined in __init__.py or imported from elsewhere
+BOT_NAME = None
+BOT_USERNAME = None
+BOT_ID = None
+
 # Initialize bots and clients
 application = ApplicationBuilder().token(TOKEN).build()
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
