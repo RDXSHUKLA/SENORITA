@@ -9,7 +9,13 @@ from pyrogram import Client
 from telethon import TelegramClient
 
 StartTime = time.time()
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+telethn = TelegramClient("mukesh", API_ID, API_HASH)
+
+pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN,in_memory=True)
 dispatcher = updater.dispatcher
+aiohttpsession = ClientSession()
+
 # Enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
