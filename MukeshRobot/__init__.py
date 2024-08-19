@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 import time
+import asyncio
 from telegram.ext import Application, ApplicationBuilder
 from aiohttp import ClientSession
 from pyrogram import Client
@@ -146,28 +147,36 @@ DEV_USERS.add(abs(0b101100001110010100011000111101001))
 application = ApplicationBuilder().token(TOKEN).build()
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
 pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN, in_memory=True)
-aiohttpsession = ClientSession()
 
-print("[INFO]: Getting Bot Info...")
-bot = application.bot
-BOT_ID = bot.id
-BOT_NAME = bot.first_name
-BOT_USERNAME = bot.username
+async def main():
+    global aiohttpsession
+    aiohttpsession = ClientSession()
 
-DRAGONS = list(DRAGONS) + list(DEV_USERS)
-DEV_USERS = list(DEV_USERS)
-WOLVES = list(WOLVES)
-DEMONS = list(DEMONS)
-TIGERS = list(TIGERS)
+    print("[INFO]: Getting Bot Info...")
+    bot = application.bot
+    BOT_ID = bot.id
+    BOT_NAME = bot.first_name
+    BOT_USERNAME = bot.username
 
-# Load at end to ensure all previous variables have been set
-from MukeshRobot.modules.helper_funcs.handlers import (
-    CustomCommandHandler,
-    CustomMessageHandler,
-    CustomRegexHandler,
-)
+    DRAGONS = list(DRAGONS) + list(DEV_USERS)
+    DEV_USERS = list(DEV_USERS)
+    WOLVES = list(WOLVES)
+    DEMONS = list(DEMONS)
+    TIGERS = list(TIGERS)
 
-# Make sure the regex handler can take extra kwargs
-tg.RegexHandler = CustomRegexHandler
-tg.CommandHandler = CustomCommandHandler
-tg.MessageHandler = CustomMessageHandler
+    # Load at end to ensure all previous variables have been set
+    from MukeshRobot.modules.helper_funcs.handlers import (
+        CustomCommandHandler,
+        CustomMessageHandler,
+        CustomRegexHandler,
+    )
+
+    # Make sure the regex handler can take extra kwargs
+    tg.RegexHandler = CustomRegexHandler
+    tg.CommandHandler = CustomCommandHandler
+    tg.MessageHandler = CustomMessageHandler
+
+# Ensure the event loop is running
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
