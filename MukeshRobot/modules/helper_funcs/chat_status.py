@@ -3,7 +3,8 @@ from threading import RLock
 from time import perf_counter
 
 from cachetools import TTLCache
-from telegram import Chat, ChatMember, ParseMode, Update
+from telegram import Chat, ChatMember, Update
+from telegram.constants import ParseMode  # Updated import path
 from telegram.ext import CallbackContext
 
 from MukeshRobot import (
@@ -16,6 +17,7 @@ from MukeshRobot import (
     WOLVES,
     dispatcher,
 )
+
 
 # stores admemes in memory for 10 min.
 ADMIN_CACHE = TTLCache(maxsize=512, ttl=60 * 10, timer=perf_counter)
