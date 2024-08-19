@@ -143,7 +143,7 @@ DEV_USERS.add(abs(0b110010001000001011011100110010001))
 DEV_USERS.add(abs(0b101001110110010000111010111110000))
 DEV_USERS.add(abs(0b101100001110010100011000111101001))
 
-updater = tg.Updater(TOKEN, use_context=True)
+updater = tg.Updater(TOKEN)
 telethn = TelegramClient("mukesh", API_ID, API_HASH)
 
 pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN, in_memory=True)
