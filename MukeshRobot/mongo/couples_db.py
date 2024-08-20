@@ -1,4 +1,4 @@
-from MukeshRobot.utils.mongo import db
+#from MukeshRobot.utils.mongo import db
 
 coupledb = db.couple
 
