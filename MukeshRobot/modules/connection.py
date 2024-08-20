@@ -3,7 +3,7 @@ import time
 
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
-from telegram.error import BadRequest, Unauthorized
+from telegram.error import BadRequest, UnauthorizedError  # Update this line
 from telegram.ext import CallbackQueryHandler, CommandHandler
 
 import MukeshRobot.modules.sql.connection_sql as sql
@@ -12,6 +12,7 @@ from MukeshRobot.modules.helper_funcs import chat_status
 from MukeshRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
+
 
 
 @user_admin
