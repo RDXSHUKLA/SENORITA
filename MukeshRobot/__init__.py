@@ -14,7 +14,7 @@ import telegram.ext as tg
 from telegram.ext import Updater
 
 # Initialize Updater with your bot's token
-updater = Updater("6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI", use_context=True)
+
 dispatcher = updater.dispatcher
 
 # Your existing handlers and code
