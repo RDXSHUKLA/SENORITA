@@ -3,7 +3,7 @@ import os
 import sys
 import time
 import asyncio
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler
+from telegram.ext import CommandHandler, MessageHandler
 from telegram.ext import filters  # This should work in v13.x
 
 from aiohttp import ClientSession
