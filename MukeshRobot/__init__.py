@@ -4,7 +4,8 @@ import sys
 import time
 import asyncio
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler
-from telegram.ext.filters import Filters
+from telegram.ext import Filters  # This should work in v13.x
+
 from aiohttp import ClientSession
 from pyrogram import Client
 from telethon import TelegramClient
