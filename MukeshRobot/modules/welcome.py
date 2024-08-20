@@ -23,7 +23,7 @@ from telegram.ext import (
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
 import MukeshRobot
-import MukeshRobot.modules.sql.welcome_sql as sql
+#import MukeshRobot.modules.sql.welcome_sql as sql
 from MukeshRobot import (
     DEMONS,
     DEV_USERS,
