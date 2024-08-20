@@ -33,7 +33,7 @@ from MukeshRobot import (
     OWNER_ID,
     TIGERS,
     WOLVES,
-    dispatcher,
+    #dispatcher,
 )
 from MukeshRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
