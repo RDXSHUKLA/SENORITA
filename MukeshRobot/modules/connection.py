@@ -6,7 +6,7 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update
 #from telegram.error import BadRequest, UnauthorizedError  # Update this line
 from telegram.ext import CallbackQueryHandler, CommandHandler
 
-import MukeshRobot.modules.sql.connection_sql as sql
+#import MukeshRobot.modules.sql.connection_sql as sql
 from MukeshRobot import DEV_USERS, DRAGONS, dispatcher
 from MukeshRobot.modules.helper_funcs import chat_status
 from MukeshRobot.modules.helper_funcs.alternate import send_message, typing_action
