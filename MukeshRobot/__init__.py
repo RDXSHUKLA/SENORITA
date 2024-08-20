@@ -16,7 +16,7 @@ from telegram.ext import Updater
 # Initialize Updater with your bot's token
 
 # Your existing handlers and code
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler
+from telegram.ext import CommandHandler, MessageHandler
 from telegram.ext.filters import Text, Command
 
 # Create your application instance
