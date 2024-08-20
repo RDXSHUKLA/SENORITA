@@ -9,7 +9,7 @@ from pyrogram.enums import *
 
 #BOT FILE NAME
 from MukeshRobot import pbot as app
-from MukeshRobot.mongo.couples_db import _get_image, get_couple
+#from MukeshRobot.mongo.couples_db import _get_image, get_couple
 
 def dt():
     now = datetime.now()
