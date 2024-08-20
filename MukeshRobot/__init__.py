@@ -35,7 +35,7 @@ NO_LOAD = []
 EVENT_LOGS = "-1002018556839"
 MONGO_DB_URI= "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
 
-DB_URI = "postgres://iarfggbc:Vxzh_kG7cxa1kHR5faxcd1kuA4R-UT9E@rosie.db.elephantsql.com/iarfggbc"
+DB_URI = "postgres://ueq2960pt3og4t:pbe6de601915700c3989631b4c3fd22f235dc60ba46540271311b247e89d89559@ceqbglof0h8enj.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/deoqntgbldn698"
 
 DATABASE_URL = "postgres://fodrfyzd:fozO611cVktRfkPLfRb1S52saC6AsKAe@castor.db.elephantsql.com/fodrfyzd"  # A sql database url from elephantsql.com
 CASH_API_KEY = ""
