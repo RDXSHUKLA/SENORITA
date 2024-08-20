@@ -49,7 +49,7 @@ class ConnectionHistory(BASE):
         return "<connection user {} history {}>".format(self.user_id, self.chat_id)
 
 
-ChatAccessConnectionSettings.__table__.create(checkfirst=True)
+#ChatAccessConnectionSettings.__table__.create(checkfirst=True)
 Connection.__table__.create(checkfirst=True)
 ConnectionHistory.__table__.create(checkfirst=True)
 
