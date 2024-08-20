@@ -17,7 +17,7 @@ from telegram.ext import Updater
 
 # Your existing handlers and code
 from telegram.ext import CommandHandler, MessageHandler
-from telegram.ext.filters import Text, Command
+from telegram.ext.filters import Command
 
 # Create your application instance
 
