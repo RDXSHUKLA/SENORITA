@@ -2,7 +2,7 @@ import os
 import random
 from datetime import datetime 
 from telegraph import upload_file
-from PIL import Image , ImageDraw
+from PIL import Image, ImageDraw
 from pyrogram import *
 from pyrogram.types import *
 from pyrogram.enums import *
