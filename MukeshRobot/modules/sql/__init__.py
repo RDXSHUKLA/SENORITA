@@ -17,15 +17,15 @@ def start() -> scoped_session:
     try:
         # Log the URI (excluding sensitive information if necessary)
         log.debug(f"[PostgreSQL] Creating engine with URI: {DB_URI}")
-        
+
         # Create the engine and bind it to the metadata
         engine = create_engine(DB_URI, client_encoding="utf8")
         log.info("[PostgreSQL] Connecting to database...")
-        
+
         # Bind metadata and create tables if they don't exist
         BASE.metadata.bind = engine
         BASE.metadata.create_all(engine)
-        
+
         # Return the scoped session
         return scoped_session(sessionmaker(bind=engine, autoflush=False))
     except SQLAlchemyError as e:
