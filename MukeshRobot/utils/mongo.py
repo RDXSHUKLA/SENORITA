@@ -3,6 +3,8 @@ from typing import Dict, Union
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 
 from MukeshRobot import MONGO_DB_URI
+# Replace with your actual MongoDB URI
+MONGO_DB_URI = "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
 
 mongo = MongoCli(MONGO_DB_URI)
 db = mongo.MukeshRobot
