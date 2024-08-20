@@ -20,16 +20,6 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler
 from telegram.ext.filters import Text, Command
 
 # Create your application instance
-app = ApplicationBuilder().token("6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI").build()
-
-# Add handlers
-app.add_handler(CommandHandler('start', start_handler))
-app.add_handler(MessageHandler(Text(), message_handler))
-
-# Run the bot
-app.run_polling()
-
-
 
 TOKEN="6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
 WORKERS = 8
