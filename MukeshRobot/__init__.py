@@ -3,19 +3,21 @@ import os
 import sys
 import time
 import asyncio
-from telegram.ext import ApplicationBuilder
+from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler
+from telegram.ext.filters import Filters
 from aiohttp import ClientSession
 from pyrogram import Client
 from telethon import TelegramClient
 import telegram.ext as tg
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-# ApplicationBuilder is only in version 20.0+
+
 from telegram.ext import Updater
 
+# Initialize Updater with your bot's token
 updater = Updater("6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI", use_context=True)
 dispatcher = updater.dispatcher
 
 # Your existing handlers and code
+
 
 
 TOKEN="6797752601:AAHrEu4VBbnFnnrV9jja8gGavrnXZENgtFI"
