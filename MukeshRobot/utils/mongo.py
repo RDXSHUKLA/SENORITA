@@ -1,16 +1,17 @@
-from typing import Dict, Union
-
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
-
+from pymongo.errors import ConnectionFailure
 from MukeshRobot import MONGO_DB_URI
-# Replace with your actual MongoDB URI
-MONGO_DB_URI = "mongodb+srv://SHASHANK:STRANGER@shashank.uj7lold.mongodb.net/?retryWrites=true&w=majority"
 
-mongo = MongoCli(MONGO_DB_URI)
-db = mongo.MukeshRobot
+try:
+    mongo = MongoCli(MONGO_DB_URI)
+    db = mongo.get_database("MukeshRobot")
+    print("Successfully connected to MongoDB")
+except ConnectionFailure as e:
+    print(f"Failed to connect to MongoDB: {e}")
 
-coupledb = db.couple
-karmadb = db.karma
+coupledb = db.get_collection("couple")
+karmadb = db.get_collection("karma")
+
 
 
 async def _get_lovers(cid: int):
