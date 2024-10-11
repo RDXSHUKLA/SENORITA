@@ -314,7 +314,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.3)
             lol.edit_text("100% ███████████")
             time.sleep(0.4)
-            lol.edit_text("𝘂𝗵𝗵..! 𝗶𝗺 𝗮𝗺 𝗰𝗼𝗺𝗶𝗻𝗴")
+            lol.edit_text("𝘂𝗺𝗺..! 𝗶𝗺 𝗮𝗺 𝗰𝗼𝗺𝗶𝗻𝗴")
             lol.delete()
 
             update.effective_message.reply_photo(random.choice(NYKAA),PM_START_TEXT.format(escape_markdown(first_name),BOT_NAME,sql.num_users(),sql.num_chats()),
